@@ -1,0 +1,14 @@
+docs_list_title: navigation
+docs:
+
+- title: Home
+  url: index.html
+
+- title: About
+  url: about_me.html
+
+- title: Projects
+  url: projects.html
+
+- title: Contacts
+  url: my_contacts.html

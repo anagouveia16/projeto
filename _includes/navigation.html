@@ -1,8 +1,10 @@
 <nav>
     <ul>
-        <li><a>About</a></li> <!-- como criar as ligações com links para -->
-        <li><a>Projects</a></li>
-        <li><a>Contact</a></li> 
+        {% for nav in site.data.nav-geral.docs %}
+        <li>
+            <a href="{{ site.baseurl }}/{{navigation.url}}">{{ navigation.title }}</a>
+        </li> 
+        {% endfor %}
     </ul>
 </nav>
 
