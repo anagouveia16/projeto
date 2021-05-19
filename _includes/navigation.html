@@ -1,10 +1,10 @@
 <nav>
+    <h1><a href="{{ site.baseurl }}/">Ana Gouveia</a></h1>
     <ul>
-        {% for nav in site.data.nav-geral.docs %}
+        {% for navigation in site.data.nav-geral.docs %}
         <li>
-            <a href="{{ navigation.url }}">{{ navigation.title }}</a>
+            <a href="{{ site.baseurl }}/{{ navigation.url }}">{{ navigation.title }}</a>
         </li> 
         {% endfor %}
     </ul>
-</nav>
-
+</nav> 
