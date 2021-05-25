@@ -1,10 +1,12 @@
-<nav>
-    <h1><a href="{{ site.baseurl }}/">Ana Gouveia</a></h1>
-    <ul>
-        {% for navigation in site.data.nav-geral.docs %}
-        <li>
-            <a href="{{ site.baseurl }}/{{ navigation.url }}">{{ navigation.title }}</a>
-        </li> 
-        {% endfor %}
-    </ul>
-</nav> 
+
+    <nav>
+        <h1><a href="{{ site.baseurl }}/">Ana Gouveia</a></h1>
+        <a href="{{ site.baseurl }}/"><img src="{{ "assets/images/memoji_ana.png" | relative_url }}" alt="icon my memoji"></a>
+        <ul>
+            {% for navigation in site.data.nav-geral.docs %}
+            <li>
+                <a href="{{ site.baseurl }}/{{ navigation.url }}">{{ navigation.title }}</a>
+            </li> 
+            {% endfor %}
+        </ul>
+    </nav> 
