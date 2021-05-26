@@ -1,7 +1,18 @@
 <nav>
     <ul>
         {% for project in site.projects %}
-            <li><a href="{{ site.baseurl }}/projects/{{project.slug}}">{{ project.title }}</a></li>
-            {% endfor %}
+        <li>
+            <figure>
+                <a href="{{ site.baseurl }}/projects/{{project.slug}}">
+                    <figure>
+                        <img src="assets/images/{{ project.img-thumbnail }}" alt="{{ project.image-alt }}">
+                    </figure>
+                    {% if page.layout == "projects" %}
+                        <p>{{ project.title }}</p>
+                    {% endif %}
+                </a>
+            </figure>
+        </li>
+        {% endfor %}
     </ul>
 </nav>
