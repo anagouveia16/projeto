@@ -5,7 +5,7 @@
         <ul>
             {% for navigation in site.data.nav-geral.docs %}
             <li>
-                <a href="{{ site.baseurl }}/{{ navigation.url }}">{{ navigation.title }}</a>
+                <a href="{{ site.baseurl }}/{{ navigation.url }}" title="Go to {{ navigation.title }}">{{ navigation.title }}</a>
             </li> 
             {% endfor %}
         </ul>
