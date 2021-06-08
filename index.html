@@ -3,16 +3,29 @@ layout: home
 title: ""
 ---
 
-<section>
 
-  <h1>Hi there! I’m Ana Gouveia, a product designer that loves to solve problems and to create digital experiences.( ͡❛ ͜ʖ ͡❛)</h1>
+<div class="home-wrapper">
+  <section class="intro">
+    <p><span class="bold-text">Hi there!</span>
+      <br>I’m Ana Gouveia, a product designer that loves to <span class="bold-text">solve problems</span> and to <span class="bold-text">create digital experiences.</span>( ͡❛ ͜ʖ ͡❛)</p>
 
-  <p><a href="my_contacts.html" title="Link to page where we can talk!">Should we talk? Yes.</a></p>
+    <p class="talk"><a href="my_contacts.html" title="Link to page where we can talk!">Should we talk? Yes.</a></p>
+  </section>
+</div>
 
-  {%- if site.projects.size > 0 -%}
-    {% include navigation-projects.html %} 
-  {% else %}
-    No projects for today! Sorry! :( 
-  {%- endif -%}
+<div class="bg-gradient"></div>
 
-</section>
+<img class="dogs-animated" src="assets/images/canitos.png" alt="my dogs in a shaped heart animated picture"></img>
+
+
+<div class="white-bg"> 
+
+  <section class="projects-home">
+    {%- if site.projects.size > 0 -%}
+      {% include navigation-projects.html %} 
+    {% else %}
+      No projects for today! Sorry! :( 
+    {%- endif -%}
+  </section>
+
+</div>

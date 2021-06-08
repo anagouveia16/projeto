@@ -1,18 +1,16 @@
-<nav>
+<div class="project-nav">
     <ul>
         {% for project in site.projects %}
-        <li>
+        <li class="projects-list">
             <figure>
                 <a href="{{ site.baseurl }}/projects/{{project.slug}}" title="{{ project.link-title }}">
-                    <figure>
-                        <img src="assets/images/{{ project.img-thumbnail }}" alt="{{ project.image-alt }}">
-                    </figure>
+                        <img class="projects-list-img" src="assets/images/{{ project.img-thumbnail }}" alt="{{ project.image-alt }}">
                     {% if page.layout == "projects" %}
-                        <p>{{ project.title }}</p>
+                        <p class="project-title">{{ project.title }}</p>
                     {% endif %}
                 </a>
             </figure>
         </li>
         {% endfor %}
     </ul>
-</nav>
+</div>
