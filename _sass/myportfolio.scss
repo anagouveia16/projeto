@@ -5,9 +5,6 @@ body {
     @include myfont;
     margin: 0;
     padding: 0;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 1fr 100px;*/ 
 }
 
 ul {
@@ -26,6 +23,12 @@ img {
 }
     
 
+
+
+
+
+/* HEADER */
+
 header {
     max-width: 100%;
     padding: 20px;
@@ -33,7 +36,7 @@ header {
     ul {
         display: flex;
         flex-direction: row;
-        justify-content: flex-end; /*header fechado, confirmar quando responsividade */
+        justify-content: flex-end;
         li {
             @include nav-home;
             padding: 15px;
@@ -53,8 +56,6 @@ header li:hover {
             }
 
 
-/* HOMEPAGE*/
-
 .memoji {
     position: absolute;
     height: 100px;
@@ -66,6 +67,11 @@ header li:hover {
     }
 }
 
+
+
+
+
+/* HOMEPAGE*/
 
 .home-wrapper {
     .intro {
@@ -125,8 +131,11 @@ header li:hover {
     background-color: white;
     margin-top: 500px;
     padding: 20px;
-    
 }
+
+
+
+
 
 
 /* FOOTER */
@@ -140,7 +149,6 @@ footer {
         flex-direction: row;
         justify-content: flex-start;
         padding-top: 110px;
-        
         li {
             @include footer;
             padding: 15px;
@@ -150,7 +158,8 @@ footer {
                 list-style-type: none;
                 color: inherit;
             } 
-    }    }       
+        }    
+    }
 }
 
 footer li:hover {
@@ -163,6 +172,10 @@ footer p {
     left: 15px;
     color: $color-txt-footer;
 }
+
+
+
+
 
 
 /* PÁGINA ABOUT */
@@ -201,6 +214,9 @@ footer p {
 }
 
 
+
+
+
 /* PÁGINA SELECTED */
 
 .selected-title {
@@ -208,7 +224,6 @@ footer p {
     padding: 60px 50px 30px 20px;
 
 }
-
 
 .projects-list {
     list-style-type: none; 
@@ -231,9 +246,8 @@ footer p {
 
 }
 
-.project-title {
-    
-}
+
+
 
 
 /* PÁGINA BOBBLE+SPOTIFY */
@@ -311,6 +325,9 @@ figcaption {
 }
 
 
+
+
+
 /* PÁGINA CONTACTS */
 
 .my-contacts {
@@ -356,9 +373,7 @@ figcaption {
             text-decoration: none;
             color: $color-btn-hover;
         }
-    }
-
-    
+    }  
 }
 
 
@@ -385,6 +400,9 @@ figcaption {
         padding-top: 75px;
     }
 
+
+
+
     /* HOME INTRO */
     
     
@@ -408,7 +426,10 @@ figcaption {
     .white-bg {
         background-color: white;
         margin-top: 700px;
+        margin-bottom: 50px;
     }
+
+
 
 
     /* ABOUT PAGE */ 
@@ -425,6 +446,8 @@ figcaption {
        line-height: 24px;
 
     }
+
+
 
     
     /* SELECTED PROJECTS PAGE */
@@ -447,6 +470,9 @@ figcaption {
     .projects-list-img {
         max-width: 600px;
     }
+
+
+
 
     /* PROJECTS  PAGE */
 
