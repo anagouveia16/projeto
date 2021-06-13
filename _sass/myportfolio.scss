@@ -59,7 +59,7 @@ header li:hover {
 .memoji {
     position: absolute;
     height: 100px;
-    left: 50px;
+    left: 25px;
     top: 10px;
     transition: transform .7s ease-in-out;
     &:hover {
@@ -459,7 +459,7 @@ figcaption {
     }
 
     .project-nav {
-        padding-left: 140px;
+        padding-left: 150px;
         ul {
         padding: auto;
         display: flex;
