@@ -23,9 +23,9 @@ figure {
 
 img {
     max-width: 100%;
-    height: auto; 
+    height: auto;
 }
-    
+
 
 
 
@@ -37,27 +37,30 @@ header {
     max-width: 100%;
     padding: 20px;
     margin-bottom: 70px;
+
     ul {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
+
         li {
             @include nav-home;
             padding: 15px;
             list-style-type: none;
+
             a {
                 text-decoration: none;
                 list-style-type: none;
                 color: inherit;
-            } 
-        }       
+            }
+        }
     }
 }
 
 header li:hover {
-                color: $color-btn-hover;
-                text-decoration: underline;
-            }
+    color: $color-btn-hover;
+    text-decoration: underline;
+}
 
 
 .memoji {
@@ -66,6 +69,7 @@ header li:hover {
     left: 25px;
     top: 10px;
     transition: transform .7s ease-in-out;
+
     &:hover {
         transform: rotate(360deg);
     }
@@ -87,13 +91,15 @@ header li:hover {
         text-align: left;
         max-width: 80 vw;
         @include home-about;
+
         .talk {
             padding-top: 50px;
             @include home-talk;
+
             a {
                 text-decoration: underline;
                 color: inherit;
-            } 
+            }
         }
     }
 }
@@ -103,14 +109,14 @@ header li:hover {
 }
 
 .bg-gradient {
-    background-image: linear-gradient(90deg, rgba(255,211,218,1) 0%, rgba(238,255,218,1) 41%, rgba(217,253,255,1) 100%);
+    background-image: linear-gradient(90deg, rgba(255, 211, 218, 1) 0%, rgba(238, 255, 218, 1) 41%, rgba(217, 253, 255, 1) 100%);
     top: 0;
     position: absolute;
     width: 100%;
     height: 100%;
     background-size: cover;
     z-index: -1;
-} 
+}
 
 .dogs-animated {
     width: 100px;
@@ -120,15 +126,34 @@ header li:hover {
     animation-duration: 7s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-  }
-  
+}
+
 @keyframes dogs {
-    0%   {left:0px; top:0px;}
-    25%  {left:0px; top:300px;}
-    50%  {left:70%; top:300px;}
-    75%  {left:70%; top:0px;}
-    100% { left:0px; top:0px;}
-  }
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        left: 0px;
+        top: 300px;
+    }
+
+    50% {
+        left: 70%;
+        top: 300px;
+    }
+
+    75% {
+        left: 70%;
+        top: 0px;
+    }
+
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
 
 
 .white-bg {
@@ -145,24 +170,27 @@ header li:hover {
 /* FOOTER */
 
 footer {
-   height: 200px;
-   background-color: $color-footer;
-   position: relative;
-   ul {  
+    height: 200px;
+    background-color: $color-footer;
+    position: relative;
+
+    ul {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         padding-top: 110px;
+
         li {
             @include footer;
             padding: 15px;
             list-style-type: none;
+
             a {
                 text-decoration: none;
                 list-style-type: none;
                 color: inherit;
-            } 
-        }    
+            }
+        }
     }
 }
 
@@ -185,12 +213,12 @@ footer p {
 /* PÁGINA ABOUT */
 
 
-.container-about { 
+.container-about {
     display: grid;
 }
 
-.title-about{
-    
+.title-about {
+
     padding: 0px 40px;
     margin: 0;
 }
@@ -200,9 +228,9 @@ footer p {
     max-width: 600px;
     margin: 0;
     padding: 60px 40px;
-   
+
     li {
-        list-style-type: none;  
+        list-style-type: none;
     }
 }
 
@@ -214,7 +242,7 @@ footer p {
     max-width: 300px;
     margin: auto;
     padding-bottom: 50px;
-   
+
 }
 
 
@@ -230,12 +258,14 @@ footer p {
 }
 
 .projects-list {
-    list-style-type: none; 
+    list-style-type: none;
     padding: 20px;
+
     a {
         text-decoration: none;
         color: $color-main;
         font-weight: 500;
+
         &:hover {
             text-decoration: none;
             color: $color-btn-hover;
@@ -260,6 +290,7 @@ article {
     padding: 0;
     margin: auto;
     @include paragraph;
+
     figure {
         padding: 0;
         margin: 0;
@@ -269,13 +300,15 @@ article {
 .container-project {
     padding: 30px;
     margin-top: 30px;
+
     h2 {
         @include title-project;
         margin-bottom: 20px;
+
         p {
             margin-bottom: 20px;
         }
-    }    
+    }
 }
 
 figcaption {
@@ -286,6 +319,7 @@ figcaption {
 
 .unordered-takeaways {
     padding: 0;
+
     .list-takeaways {
         list-style: none;
     }
@@ -295,6 +329,7 @@ figcaption {
     padding-top: 30px;
 
 }
+
 .project-page-img {
     max-width: 80vw;
     padding-top: 60px;
@@ -305,6 +340,7 @@ figcaption {
     @include btn-back;
     padding: 50px;
     text-decoration: underline;
+
     &:hover {
         color: $color-btn-hover;
     }
@@ -313,6 +349,7 @@ figcaption {
 .full-work-link-bobble {
     text-decoration: underline;
     color: $color-title-bobble;
+
     &:hover {
         text-decoration: none;
         color: $color-btn-hover;
@@ -322,6 +359,7 @@ figcaption {
 .full-work-link-spotify {
     text-decoration: underline;
     color: $color-title-spotify;
+
     &:hover {
         text-decoration: none;
         color: $color-btn-hover;
@@ -342,25 +380,30 @@ figcaption {
     h1 {
         @include selected-title;
     }
+
     p {
         padding: 40px 0 40px 0;
+
         .mail {
             text-decoration: underline;
             color: $color-main;
+
             &:hover {
                 text-decoration: none;
                 color: $color-btn-hover;
             }
-        }            
+        }
     }
-    
+
 }
 
 
 .social-media {
     h2 {
         @include selected-title;
+        margin-bottom: 20px;
     }
+
     ul {
         padding: 40px 0 40px 0;
     }
@@ -370,14 +413,16 @@ figcaption {
     list-style-type: none;
     margin: 0;
     padding-bottom: 19px;
+
     a {
         text-decoration: underline;
         color: $color-main;
+
         &:hover {
             text-decoration: none;
             color: $color-btn-hover;
         }
-    }  
+    }
 }
 
 
@@ -391,12 +436,12 @@ figcaption {
 
 
 /*              ----------MEDIA QUERIES----------              */
- 
+
 
 @media only screen and (min-width: 1024px) {
 
 
-    /* FOOTER */ 
+    /* FOOTER */
 
     footer ul {
         display: flex;
@@ -408,24 +453,43 @@ figcaption {
 
 
     /* HOME INTRO */
-    
-    
+
+
     .home-wrapper {
         .intro {
             font-size: 40px;
             line-height: 48px;
             max-width: 920px;
             padding: auto;
-        }    
+        }
     }
 
     @keyframes dogs {
-        0%   {left:0px; top:0px;}
-        25%  {left:0px; top:450px;}
-        50%  {left:57%; top:450px;}
-        75%  {left:57%; top:0px;}
-        100% { left:0px; top:0px;}
-      }
+        0% {
+            left: 0px;
+            top: 0px;
+        }
+
+        25% {
+            left: 0px;
+            top: 450px;
+        }
+
+        50% {
+            left: 57%;
+            top: 450px;
+        }
+
+        75% {
+            left: 57%;
+            top: 0px;
+        }
+
+        100% {
+            left: 0px;
+            top: 0px;
+        }
+    }
 
     .white-bg {
         background-color: white;
@@ -436,37 +500,37 @@ figcaption {
 
 
 
-    /* ABOUT PAGE */ 
+    /* ABOUT PAGE */
 
     .container-about {
         display: flex;
-        margin: 120px 140px 180px 140px;   
+        margin: 120px 140px 180px 140px;
     }
 
     .my_description {
-       max-width: 700px;
-       padding: 0;
-       font-size: 18px;
-       line-height: 24px;
-
+        max-width: 700px;
+        padding: 0;
+        font-size: 18px;
+        line-height: 24px;
     }
 
 
 
-    
+
     /* SELECTED PROJECTS PAGE */
 
     .selected-title {
         padding-left: 155px;
         font-size: 40px;
-    
+
     }
 
     .project-nav {
         padding-left: 150px;
+
         ul {
-        padding: auto;
-        display: flex;
+            padding: auto;
+            display: flex;
         }
     }
 
@@ -486,13 +550,14 @@ figcaption {
         padding-top: 60px;
         max-width: 920px;
         margin: auto;
+
         h2 {
             font-size: 24px;
         }
     }
 
     .project-page-img {
-        max-width: 920px;  
+        max-width: 920px;
     }
 
 
@@ -504,19 +569,22 @@ figcaption {
         display: flex;
         margin: auto;
         padding-left: 170px;
+
         .conversation {
             padding: 100px 130px 10px 200px;
+
             h1 {
                 max-width: 300px;
             }
         }
+
         .social-media {
             padding: 100px 130px 10px 200px;
+
             h2 {
                 max-width: 300px;
             }
-        } 
+        }
     }
 
 }
-
