@@ -35,7 +35,7 @@ img {
 
 header {
     max-width: 100%;
-    padding: 20px;
+    padding: 40px;
 
     ul {
         display: flex;
@@ -445,13 +445,14 @@ figcaption {
 
     footer {
         ul {
-        display: flex;
-        justify-content: flex-end;
-        padding-top: 75px;
+            display: flex;
+            justify-content: flex-end;
+            padding-top: 75px;
+
             li {
                 font-size: 16px;
             }
-       }
+        }
     }
 
 
@@ -529,7 +530,7 @@ figcaption {
     /* SELECTED PROJECTS PAGE */
 
     .selected-title {
-        padding-left: 155px;
+        padding-left: 170px;
         font-size: 40px;
 
     }
